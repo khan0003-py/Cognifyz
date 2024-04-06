@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="mb-4">Welcome!</h2>
+    <h2 id="username" class="text-primary"></h2>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Retrieve username from URL query parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const username = urlParams.get('name');
+
+    // Set username in the HTML
+    document.getElementById('username').innerText = username;
+  </script>
+</body>
+</html>

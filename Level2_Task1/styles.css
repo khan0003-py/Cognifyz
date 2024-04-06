@@ -1,0 +1,17 @@
+body {
+    background-color: #f8f9fa; /* Set background color */
+  }
+  
+  .card {
+    height: 100%; /* Ensure all cards have the same height */
+  }
+  
+  .card-body {
+    height: 100%; /* Ensure all card bodies have the same height */
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
